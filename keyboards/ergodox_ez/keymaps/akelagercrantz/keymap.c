@@ -2,8 +2,6 @@
 #include "debug.h"
 #include "action_layer.h"
 #include "version.h"
-//#include "keymap_nordic.h"
-//#include "keymap_norwegian.h"
 #include "keymap_swedish.h"
 
 // clang-format off
@@ -86,11 +84,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * |        |   !  |   @  |   {  |   }  |   |  |      |           |      |   <  |   7  |   8  |   9  |   *  |   F12  |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |        |   #  |   $  |   (  |   )  |   `  |------|           |------|   >  |   4  |   5  |   6  |   +  |        |
+ * |        |   #  |   $  |   (  |   )  |   /  |------|           |------|   >  |   4  |   5  |   6  |   +  |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |        |   %  |   &  |   [  |   ]  |   ~  |      |           |      |   ?  |   1  |   2  |   3  |   ^  |        |
+ * |        |   %  |   &  |   [  |   ]  |   \  |      |           |      |   ?  |   1  |   2  |   3  |   ^  |        |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |      |      |   \  |   /  |      |                                       |      |   0  |   =  |      |      |
+ *   |      |   ~  |   ´  |   `  |      |                                       |      |   0  |   =  |      |      |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        |      |      |       |      |      |
@@ -106,9 +104,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       // left hand
       KC_TRNS,    KC_F1,      KC_F2,          KC_F3,          KC_F4,          KC_F5,          KC_TRNS,
       KC_TRNS,    KC_EXLM,    SE_AT,          SE_LCBR_MAC,    SE_RCBR_MAC,    SE_PIPE_MAC,    KC_TRNS,
-      KC_TRNS,    SE_HASH,    SE_DLR,         SE_LPRN,        SE_RPRN,        SE_GRV,
-      KC_TRNS,    SE_PERC,    SE_AMPR,        SE_LBRC,        SE_RBRC,        SE_TILD,        KC_TRNS,
-      KC_TRNS,    KC_TRNS,    SE_BSLS_MAC,    SE_SLSH,        KC_TRNS,
+      KC_TRNS,    SE_HASH,    SE_DLR,         SE_LPRN,        SE_RPRN,        SE_SLSH,
+      KC_TRNS,    SE_PERC,    SE_AMPR,        SE_LBRC,        SE_RBRC,        SE_BSLS_MAC,        KC_TRNS,
+      KC_TRNS,    SE_TILD,    SE_ACUT,        SE_GRV,         KC_TRNS,
 
                                                                       KC_TRNS,  KC_TRNS,
                                                                                 KC_TRNS,
@@ -132,9 +130,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       // left hand
       KC_TRNS,    KC_TRNS,    KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,
       KC_TRNS,    KC_TRNS,    KC_TRNS,        SE_LCBR,        SE_RCBR,        SE_PIPE,        KC_TRNS,
-      KC_TRNS,    KC_TRNS,    KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,
+      KC_TRNS,    KC_TRNS,    KC_TRNS,        KC_TRNS,        KC_TRNS,        SE_BSLS,
       KC_TRNS,    KC_TRNS,    KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,
-      KC_TRNS,    KC_TRNS,    SE_BSLS,        KC_TRNS,        KC_TRNS,
+      KC_TRNS,    KC_TRNS,    KC_TRNS,        KC_TRNS,        KC_TRNS,
 
                                                                       KC_TRNS,  KC_TRNS,
                                                                                 KC_TRNS,
