@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * | Esc    |      |      |      |      |      |      |           |      |      |      |      |      |      |   OS   |
+ * |  0     |   1  |   2  |   3  |   4  |   5  |   6  |           |      |      |      |      |      |      |   OS   |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * | Esc    |   Q  |   W  |   E  |   R  |   T  |ALTGUI|           |      |   Y  |   U  |   I  |   O  |   P  |   Å    |
  * |--------+------+------+------+------+------| MDIA |           |      |------+------+------+------+------+--------|
@@ -42,9 +42,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   | Ctrl |  Alt |   '  |   "  | MO 1 |                                       | MO 1 |   ;  |   :  |      |      |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        |      |      |       |      |      |
+ *                                        |   7  |   8  |       |      |      |
  *                                 ,------|------|------|       |------+------+------.
- *                                 |      |      |      |       | PgUp |      |      |
+ *                                 |      |      |   9  |       | PgUp |      |      |
  *                                 | Space| Tab  |------|       |------|Back  |Enter |
  *                                 |      |      |Delete|       | PgDn |space |      |
  *                                 `--------------------'       `--------------------'
@@ -53,13 +53,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Otherwise, it needs KC_*
 [_BASE] = LAYOUT_ergodox(  // layer 0 : default
         // left hand
-        KC_ESCAPE,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
+        KC_0,       KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,
         KC_ESCAPE,  KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,     ALT_GUI_MDIA,
         KC_LGUI,    KC_A,     KC_S,     KC_D,     KC_F,     KC_G,
         KC_LSFT,    KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,     MO(_MEDIA),
           KC_LCTL,  KC_LALT,  SE_QUOT, SE_DQUO,  MO_SYMBOLS,
-                                                             KC_TRNS,  KC_TRNS,
-                                                                       KC_TRNS,
+                                                             KC_7,     KC_8,
+                                                                       KC_9,
                                                     KC_SPC,  KC_TAB,   KC_DEL,
         // right hand
           KC_TRNS,    KC_TRNS,  KC_TRNS,    KC_TRNS,    KC_TRNS,  KC_TRNS,  SWITCH_OS,
